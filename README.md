@@ -82,4 +82,5 @@ node iotbot.js
     }
 }
 ```
-* I am also working on a sample Android app that publishes to the same topic as well as retrieves the image from the S3 bucket. I'll make it available in a separate repository when ready.
+
+(I am also working on a sample Android app that publishes to the same topic as well as retrieves the image from the S3 bucket. I'll make it available in a separate repository when ready.)
