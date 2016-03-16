@@ -7,6 +7,7 @@ Running this code from the GoPiGo will make it an IoT device allowing to control
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DexterInd/GoPiGo/master/GoPiGo_Chassis-300.jpg" />
+  <img src="https://media.amazonwebservices.com/blog/2015/deck_compute_chip_300_1.png />
 </p>
 
 # Requirements
