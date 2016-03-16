@@ -1,9 +1,13 @@
 
-# Controling and Integrating the GoPiGo with AWS IoT using Node.js
+# Controling and Integrating the GoPiGo Raspberry Pi robot with AWS IoT using Node.js
 
-The GoPiGo is a complete kit from Dexter Industries to build your own robot car with a Raspberry Pi as its brain. When connected to the Internet it can be controlled with the AWS IoT service.
+The GoPiGo is a complete kit from Dexter Industries to build your own robot car and it has a Raspberry Pi as its brain. When connected to the Internet it can be controlled with the AWS IoT service.
 
-When executing this code you can control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet.
+Running this code from the GoPiGo you'll make it an IoT device allowing to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/DexterInd/GoPiGo/master/GoPiGo_Chassis-300.jpg" />
+</p>
 
 # Requirements
 
@@ -60,7 +64,7 @@ When executing this code you can control the GoPiGo movements, servo and camera 
 ```
 node iotbot.js
 ```
-* Test with a MQQT client like MQTT.fx (http://docs.aws.amazon.com/iot/latest/developerguide/verify-pub-sub.html) by publishing the following to the "$aws/things/IoTbot/shadow/update" topic. Change from "false" to "true" to test the commands accordingly:
+* Test with a MQTT client like MQTT.fx (http://docs.aws.amazon.com/iot/latest/developerguide/verify-pub-sub.html) by publishing the following to the "$aws/things/IoTbot/shadow/update" topic. Change from "false" to "true" to test the commands accordingly:
 
 ```
 {
