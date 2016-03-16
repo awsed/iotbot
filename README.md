@@ -3,7 +3,7 @@
 
 The GoPiGo is a complete kit from Dexter Industries to build your own robot car and it has a Raspberry Pi as its brain. When connected to the Internet it can be controlled with the AWS IoT service.
 
-Running this code from the GoPiGo you'll make it an IoT device allowing to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
+Running this code from the GoPiGo will make it an IoT device allowing to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DexterInd/GoPiGo/master/GoPiGo_Chassis-300.jpg" />
