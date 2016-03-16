@@ -6,7 +6,7 @@ The GoPiGo is a complete kit from Dexter Industries to build your own robot car 
 Running this code from the GoPiGo will make it an IoT device allowing to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
 
 <p align="center">
-  <img src="http://www.dexterindustries.com/wp-content/uploads/2015/07/GoPiGo2-Base-Kit-top1-800x800.jpg" />
+  <img src="https://raw.githubusercontent.com/DexterInd/GoPiGo/master/GoPiGo_Chassis-300.jpg" />
 </p>
 
 # Requirements
