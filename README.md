@@ -1,5 +1,5 @@
 
-# Integrating GoPiGo with AWS IoT using Node.js
+# Controling and Integrating the GoPiGo with AWS IoT using Node.js
 
 The GoPiGo is a complete kit from Dexter Industries to build your own robot car with a Raspberry Pi as its brain. When connected to the Internet it can be controlled with the AWS IoT service.
 
@@ -34,7 +34,7 @@ When executing this code you can control the GoPiGo movements, servo and camera 
 }
 ```
 * Create the certitificates, download the files and attach the certificate to both the policy and the thing created earlier
-* Create a S3 rule similar to the one bellow in order to upload files from the camera to the S3 bucket, make sure the IAM role has appropriate access (PutObject). The rule will listen on the 's3upload' topic and upload a JPG file to the bucket and it can be retrieved using a mobile app with access to the bucket (GetObject), for instance:
+* Create a S3 rule similar to the one bellow in order to upload files from the camera to the S3 bucket, make sure the IAM role has appropriate access (PutObject). The rule will listen on the 's3upload' topic, upload a JPG file to the bucket and it can be retrieved using a mobile app with access to the bucket (GetObject), for instance:
 ```
 >aws iot get-topic-rule --rule-name S3 
 
