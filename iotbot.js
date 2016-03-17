@@ -139,13 +139,13 @@ function handleRequest(requestedState){
       if (error) { 
         console.log (error); 
       };
-      console.log('::IoTbot Taking Low Res Picture::' + res + '\n');
+      console.log('::IoTbot Taking Low Res Picture::' + '\n');
       fs.readFile('/home/pi/image.jpg', function (error, data) { 
         if (error) { 
           console.log (error);
         } else {
           device.publish('s3upload',data);
-          console.log('::Picture sent to S3::' + res + '\n');
+          console.log('::Picture sent to S3::' + '\n');
         };
       });
     });    
@@ -159,7 +159,7 @@ function handleRequest(requestedState){
       servo_pos=0
     };
     var res = robot.servo.move(servo_pos);
-    console.log('::IoTbot Looking left 20 degrees::' + '\n');
+    console.log('::IoTbot Looking left 20 degrees::' + res + '\n');
   };
   if(requestedState.state.reported.lookRight == "true"){
     servo_pos=servo_pos-20;
@@ -170,8 +170,6 @@ function handleRequest(requestedState){
       servo_pos=0
     };
     var res = robot.servo.move(servo_pos);
-    console.log('::IoTbot Looking left 20 degrees::' + '\n');
+    console.log('::IoTbot Looking left 20 degrees::' + res + '\n');
   };
 }
-
-
