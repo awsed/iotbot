@@ -91,6 +91,8 @@ device
     console.log(JSON.stringify(device));
     device.subscribe('$aws/things/IoTbot/shadow/#');
     device.subscribe('$aws/things/IoTbot/#');
+    device.subscribe('localstatus');
+    device.publish('localstatus', 'GoPiGo connected!');
     device.publish('$aws/things/IoTbot/shadow/update', JSON.stringify(requestedState));
     });
 
@@ -98,8 +100,12 @@ device
 device
   .on('message', function(topic, payload) {
     console.log('message', topic, payload.toString(),'\n');
+    //In case there's an IoT Remote app controlling and it sent a msg to 'localstatus', let it know GoPiGo is alive
+    if (topic == "localstatus" && payload.toString() == "IoTbot Remote connected"){
+      device.publish('localstatus', 'GoPiGo says hello to IoTbot Remote!');
+    }
     if (topic == "$aws/things/IoTbot/shadow/update"){
-	    requestedState = JSON.parse(payload.toString());
+      requestedState = JSON.parse(payload.toString());
       console.log('Waiting for command from the mothership <Endpoint>.iot.<region>.amazonaws.com\n')
       handleRequest(requestedState);
     }
@@ -153,7 +159,7 @@ function handleRequest(requestedState){
       servo_pos=0
     };
     var res = robot.servo.move(servo_pos);
-    console.log('::IoTbot Looking left 20 degrees::' + res + '\n');
+    console.log('::IoTbot Looking left 20 degrees::' + '\n');
   };
   if(requestedState.state.reported.lookRight == "true"){
     servo_pos=servo_pos-20;
@@ -164,7 +170,7 @@ function handleRequest(requestedState){
       servo_pos=0
     };
     var res = robot.servo.move(servo_pos);
-    console.log('::IoTbot Looking left 20 degrees::' + res + '\n');
+    console.log('::IoTbot Looking left 20 degrees::' + '\n');
   };
 }
 
