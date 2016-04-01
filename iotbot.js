@@ -5,7 +5,7 @@ var Robot = Gopigo.robot
 var readline = require('readline')
 var child_process = require ( 'child_process');
 var fs = require ( 'fs');
-var cmd = '/opt/vc/bin/raspistill --output /home/pi/image.jpg --nopreview --timeout 100 -q 2'
+var cmd = '/opt/vc/bin/raspistill --output /home/pi/image.jpg --nopreview -w 640 -h 480 --timeout 100 -q 20'
 
 var servo_pos=90
 
