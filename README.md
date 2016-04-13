@@ -1,9 +1,9 @@
 
 # IoTbot: Controlling and Integrating the GoPiGo Raspberry Pi robot with AWS IoT using Node.js
 
-The GoPiGo is a complete kit from Dexter Industries that allows to build your own robot car and it has a Raspberry Pi as its brain. it can become an Internet enabled device when connected to the AWS IoT service.
+The GoPiGo is a complete kit from Dexter Industries that allows to build your own robot car and it has a Raspberry Pi as its brain. It can become an Internet enabled device when connected to the AWS IoT service.
 
-Running this code from the GoPiGo will make it an IoT device allowing an operator to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
+Running this code from the GoPiGo will make it an IoT device allowing an operator using the related Android app (see link bellow), for instance, to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/DexterInd/GoPiGo/master/GoPiGo_Chassis-300.jpg" />
