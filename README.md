@@ -6,7 +6,7 @@ The GoPiGo is a complete kit from Dexter Industries that allows to build your ow
 Executing this code from the GoPiGo will make it an IoT device allowing an operator using the related Android app (see link bellow) or some other MQTT client to control the GoPiGo movements, servo and camera from anywhere as long as the GoPiGo is connected to the Internet via WiFi.
 
 <p align="center">
-  <img src="https://ksr-ugc.imgix.net/projects/932503/photo-original.jpg?v=1397874284&w=1536&h=1152&fit=crop&auto=format&q=92&s=bc317313d91cf580f5befc1715bc4430" width="400"/>
+  <img src="https://ksr-ugc.imgix.net/projects/932503/photo-original.jpg?w=1536&h=864&fit=fill&bg=FFFFFF&v=1397874284&auto=format&q=92&s=c2cb798aaee0b72ec4f4e11fa04f0fe9" width="400"/>
   <img src="https://media.amazonwebservices.com/blog/2015/deck_compute_chip_300_1.png"  />
 </p>
 
